@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <!-- Daisy Ui and Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Style Tag -->
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-emerald-100">
+    <section>
+        <div class="flex justify-center items-center h-screen">
+            <div class="bg-cyan-400 w-3/4 h-4/5">
+                <h1 class="text-3xl font-medium text-center">My Text Editor</h1>
+                <div class=" bg-cyan-200 w-3/4 h-5/6 mx-auto mt-4 border border-slate-500 rounded-md">
+                    <!-- <div class=" bg-gray-100 w-3/4 h-4/5 mx-auto">
+
+                    </div> -->
+
+                    <div class="flex w-11/12 mt-5 mx-auto items-center">
+                        <div class="flex-1 flex flex-col md:flex-row md:gap-3 lg:gap-5">
+                            <button class="font-style-btn"><i class="fa-solid fa-bold"
+                                    style="color: #0c0d0d;"></i></button>
+                            <button class="font-style-btn"> <i class="fa-solid fa-italic"
+                                    style="color: #0f0f0f;"></i></button>
+                            <button class="font-style-btn"> <i class="fa-solid fa-underline"
+                                    style="color: #19191a;"></i></button>
+
+                        </div>
+                        <div class="flex-1 flex flex-col md:flex-row md:gap-3 lg:gap-5 justify-center">
+                            <button class="text-align"><i class="fa-solid fa-align-left"
+                                    style="color: #0f0f10;"></i></button>
+                            <button class="text-align"><i class="fa-solid fa-align-center"
+                                    style="color: #0f0f10;"></i></button>
+                            <button class="text-align"><i class="fa-solid fa-align-right"
+                                    style="color: #111213;"></i></button>
+                            <button class="text-align"><i class="fa-solid fa-align-justify"
+                                    style="color: #111213;"></i></button>
+
+                        </div>
+                        <div class="flex-1 flex flex-col md:flex-row justify-end md:gap-3 lg:gap-5">
+                            <!-- input number spinner -->
+                            <input id="font-size" type="number" name="font-size" min="1" max="50" step="1" value="16">
+                            <button id="altering-uppercase-lowercase">aA</button>
+                            <!-- Input type color picker -->
+                            <input id="color-picker" type="color" value="#009900" id="color">
+                        </div>
+                    </div>
+
+
+                    <div class="my-5">
+                        <hr class="w-11/12 mx-auto border border-y-zinc-500">
+                        <div class="flex justify-center mt-5">
+                            <textarea style="min-height: 190px;" id="text-area" class="w-11/12 max-h-48 md:max-h-72"
+                                name="" id="" cols="30" rows="12"></textarea>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
